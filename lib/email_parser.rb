@@ -18,7 +18,7 @@ class EmailAddressParser
       binding.pry
     end
   end
-  @address.split 
+  @addresses.split 
   end 
   
   
