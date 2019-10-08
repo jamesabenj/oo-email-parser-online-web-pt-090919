@@ -14,9 +14,9 @@ class EmailAddressParser
   def parse 
 
     if @addresses.split[0][-1] == ","
-      return @addresses.split(", ")
+      return @addresses.split(", ").uniq
     else 
-      return @addresses.split
+      return @addresses.split.uniq
     end 
   end 
   
