@@ -17,7 +17,7 @@ class EmailAddressParser
       address.chomp!(",")
     end
   end 
-  
+end 
   
   
   
