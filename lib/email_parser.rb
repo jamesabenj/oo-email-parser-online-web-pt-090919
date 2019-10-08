@@ -12,8 +12,11 @@ class EmailAddressParser
   end 
   
   def parse 
-    @addresses.split
-    binding.pry
+
+    if @addresses.split[0][-1] == ","
+      return @addresses.split(", ")
+    else 
+      return @addresses.split
   
   end 
   
