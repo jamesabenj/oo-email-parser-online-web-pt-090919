@@ -14,10 +14,10 @@ class EmailAddressParser
   def parse 
   @addresses.split.each do |address|
     if address[-1] == ","
-      binding.pry 
       address.chomp!(",")
     end
   end
+  binding.pry 
   @addresses.split 
   end 
   
