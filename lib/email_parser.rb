@@ -15,7 +15,7 @@ class EmailAddressParser
   @addresses.split.each do |address|
     if address[-1] == ","
       address.chomp!(",")
-      binding.pry
+
     end
   end
   @addresses.split 
