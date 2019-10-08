@@ -12,13 +12,10 @@ class EmailAddressParser
   end 
   
   def parse 
-  @addresses.split.each do |address|
+  parsed_array = @addresses.split.each do |address|
     if address[-1] == ","
       address.chomp!(",")
-      binding.pry 
     end
-  end
-  @addresses.split 
   end 
   
   
