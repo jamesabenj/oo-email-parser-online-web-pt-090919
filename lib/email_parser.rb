@@ -12,7 +12,9 @@ class EmailAddressParser
   end 
   
   def parse 
-
+  @addresses.split.each do |address|
+    if address[-1] == ","
+      address.pop(",")
     if @addresses.split[0][-1] == ","
       return @addresses.split(", ").uniq
     else 
