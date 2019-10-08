@@ -17,7 +17,7 @@ class EmailAddressParser
       address.chomp!(",")
     end
   end 
-  parsed_array.uniq!
+  parsed_array.uniq
 end 
   
   
